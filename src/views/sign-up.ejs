@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Homely &ndash;register</title>
+  </head>
+  <body>
+    <main class="flex bg-[#240046] justify-center items-center h-screen">
+      <div class="bg-white rounded-xl py-14 px-24 w-1/2 shadow-md text-center">
+        <div class="logo inline-block">
+          <a href="/">
+            <img src="/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div>
+          <h1 class="text-[#121212] text-2xl font-bold mt-8 mb-7">
+            Create an account
+          </h1>
+          <form action="/sign-up" method="POST">
+            <input
+              type="text"
+              placeholder="Full name"
+              name="name"
+              class="w-full border-2 border-solid border-[#240046] rounded p-4 mb-6"
+            />
+            <input
+              type="text"
+              placeholder="Email or phone"
+              name="email"
+              class="w-full border-2 border-solid border-[#240046] rounded p-4 mb-6"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="w-full border-2 border-solid border-[#240046] rounded p-4 mb-6"
+            />
+            <input
+              type="submit"
+              value="Sign up"
+              class="w-full bg-[#240046] text-white rounded p-4 mb-6"
+            />
+          </form>
+        </div>
+        <div>
+          <span class="block mb-2"
+            >Have an account?<a
+              href="/sign-in"
+              class="text-[#121212] font-bold"
+              >Sign in</a
+            ></span
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

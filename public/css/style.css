@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+#intro {
+  background: url('/images/bg-intro.png') center/cover no-repeat;
+  /* @apply bg-black;
+  font- */
+}
+
+.about-wrapper {
+  gap: 100px;
+}
+#intro-image {
+  position: relative;
+  background: url('/images/bedroom.png') center/cover no-repeat;
+}
+
+.services {
+  gap: 10px;
+}
+.service {
+  max-width: 27%;
+  min-width: 250px;
+}
+.service h3 {
+  margin: 0.625rem 0 1rem;
+}
+
+#about-image {
+  background: url('/images/about.jpg') center/cover no-repeat;
+}
+
+.testimonial {
+  background: url('/images/bg-testimonial.png') center/cover no-repeat;
+  position: relative;
+}
+
+/* ABOUT PAGE */
+
+#bg-about {
+  background: url('/images/bg-about.png') center/cover no-repeat,
+    rgba(36, 0, 70, 0.1);
+  background-blend-mode: overlay;
+}
+
+#bg-explore {
+  background: url('/images/bg-explore.png') center/cover no-repeat;
+}
+
+/* CAROUSEL */
+.carousel-btn {
+  cursor: pointer;
+}
+
+.carousel-items,
+.carousel-items-hidden {
+  display: none;
+}
+
+.carousel-items-visible {
+  display: flex;
+  transition: slideShow ease-in-out 2ms;
+}
+
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SLIDE SHOW */
+
+.main-slide-hidden {
+  display: none;
+}
+
+.sub-slide-image:hover,
+.sub-slide-image:active {
+  display: block;
+}
